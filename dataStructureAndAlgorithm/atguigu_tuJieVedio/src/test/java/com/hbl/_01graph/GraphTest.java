@@ -34,12 +34,5 @@ public class GraphTest {
 		System.out.println("\n"+"bfs");
 		graph.bfs();
 
-		//第一次修改
-
-		//2test
-
-		//3test
-
-		//4test
 	}
 }
