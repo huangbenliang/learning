@@ -7,7 +7,7 @@ public class GraphTest {
 
 //		String[] vertexs = {"A", "B", "C", "D", "E"};
 
-		String vertexs[] = {"1", "2", "3", "4", "5", "6", "7", "8"};
+		String[] vertexs = {"1", "2", "3", "4", "5", "6", "7", "8"};
 		Graph graph = new Graph(vertexs.length);
 		graph.insertVertex(vertexs);
 
@@ -33,6 +33,12 @@ public class GraphTest {
 		graph.dfs();
 		System.out.println("\n"+"bfs");
 		graph.bfs();
+
+		//第一次修改
+
+		//2test
+
+		//3test
 
 	}
 }
