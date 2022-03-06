@@ -76,6 +76,13 @@ public class Beetle extends Insect {
 
 ![](https://gitee.com/huangbenliang/picgo/raw/master/idea/2022-03-05-xMRv3a.png)
 
+## 抽象类与接口
+1. 接口的典型使用是代表一个类的类型或一个形容词，如 Runnable 或 Serializable，而抽象类通常是类层次结构
+的一部分或一件事物的类型，如 String 或 ActionHero。
+2. Java 通过默认方法具有了某种多继承的特性。结合带有默认方法 的接口意味着结合了多个基类中的行为。因为接口中仍然不允许存在属性（只有静态属性，不适用），所以属性仍然只会来自单个基类或抽象类，也就是说，不会存在状态的
+   多继承。
+![](https://gitee.com/huangbenliang/picgo/raw/master/idea/2022-03-06-I1SKDh.png)
+
 ***
 # spring开发常识
 ## 字符串判空
