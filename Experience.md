@@ -83,6 +83,44 @@ public class Beetle extends Insect {
    多继承。
 ![](https://gitee.com/huangbenliang/picgo/raw/master/idea/2022-03-06-I1SKDh.png)
 
+## lambda与方法饮用
+1. lambda传递的是函数，但是Java中一切皆对象，所以可以把lambda表达式当成是**对接口的匿名实现类**对待。
+2. 当**引用类的静态方法或者引用实例对象的实例方法**时，**返回值和参数列表**需要完全相同。
+3. 当**引用类的实例方法**时，要实现的接口方法中第一个参数是当前类的this对象。
+
+如：
+```java
+package $11;
+
+import java.util.function.Function;
+
+class X {
+    String f() {
+        return "X::f()";
+    }
+}
+
+interface MakeString {
+    String make();
+}
+
+interface TransformX {
+    String transform(X x);
+}
+
+public class MethodReference {
+    public static void main(String[] args) {
+// MakeString ms = X::f; // [1]
+        TransformX sp = X::f;
+        Function<X,String> function=X::f;
+        X x = new X();
+
+        System.out.println(sp.transform(x)); // [2]
+        System.out.println(function.apply(x));
+        System.out.println(x.f()); // 同等效果
+    }
+}
+```
 ***
 # spring开发常识
 ## 字符串判空
@@ -102,8 +140,6 @@ public class Beetle extends Insect {
 ## 未登录csdn复制
 
 document.designMode='on'
-
-
 
 ## BeanUtils.copyProperties：用于转换对象，属性名要相同。
 
