@@ -28,7 +28,6 @@ public class TreeNode {
 		this.right = right;
 		this.next = next;
 	}
-
 	@Override
 	public String toString() {
 		if (this == null) {
@@ -43,10 +42,13 @@ public class TreeNode {
 				sb.append("#,");
 				continue;
 			} else {
-				sb.append(node.val + ",");
+				sb.append(node.val);
 			}
 			if (node.left == null && node.right == null) {
+				sb.append("*,");
 				continue;
+			} else {
+				sb.append(",");
 			}
 			queue.offer(node.left);
 			queue.offer(node.right);
