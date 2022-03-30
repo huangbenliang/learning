@@ -1,4 +1,4 @@
-package $07ProxyPattern.$13builderPattern;
+package $13builderPattern;
 
 import java.util.ArrayList;
 import java.util.List;

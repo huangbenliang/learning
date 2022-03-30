@@ -1,4 +1,4 @@
-package $07ProxyPattern.$13builderPattern;
+package $13builderPattern;
 
 public class Director {
 	public void construct(Builder builder) {

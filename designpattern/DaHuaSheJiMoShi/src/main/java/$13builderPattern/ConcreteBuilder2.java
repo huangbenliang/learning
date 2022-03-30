@@ -1,16 +1,16 @@
-package $07ProxyPattern.$13builderPattern;
+package $13builderPattern;
 
-public class ConcreteBuilder1 extends Builder {
+public class ConcreteBuilder2 extends Builder {
 	Product product = new Product();
 
 	@Override
 	public void buildPartA() {
-		product.add("部件A");
+		product.add("部件X");
 	}
 
 	@Override
 	public void buildPartB() {
-		product.add("部件B");
+		product.add("部件Y");
 	}
 
 	@Override

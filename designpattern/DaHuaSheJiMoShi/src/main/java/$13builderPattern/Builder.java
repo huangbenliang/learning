@@ -1,4 +1,4 @@
-package $07ProxyPattern.$13builderPattern;
+package $13builderPattern;
 
 public abstract class Builder {
 	public abstract void buildPartA();
