@@ -22,6 +22,7 @@ public class TreeEntity {
 		TreeNode r24 = new TreeNode(9);
 		root.left = r11;
 		root.right = r12;
+		//5
 		r11.left = r21;
 		r11.right = r22;
 		r12.left = r23;
