@@ -30,5 +30,6 @@ public class P654 {
 		root.left = construct(nums, left, index - 1);
 		root.right = construct(nums, index + 1, right);
 		return root;
+		//6
 	}
 }

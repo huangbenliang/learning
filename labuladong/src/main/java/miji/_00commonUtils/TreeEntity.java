@@ -25,6 +25,7 @@ public class TreeEntity {
 		//2
 
 		//5
+		//6
 		r11.left = r21;
 		r11.right = r22;
 		r12.left = r23;
