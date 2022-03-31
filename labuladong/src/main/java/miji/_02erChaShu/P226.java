@@ -18,4 +18,5 @@ public class P226 {
 		root.right=temp;
 		return root;
 	}
+	//test1
 }
