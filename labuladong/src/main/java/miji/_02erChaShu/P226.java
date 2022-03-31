@@ -23,4 +23,5 @@ public class P226 {
 	//test3
 
 	//1
+	//2
 }
