@@ -4,8 +4,8 @@ import lombok.Data;
 
 @Data
 public class Person {
-	public int age;
 	private String name;
+	public int age;
 
 	public Person() {
 	}
