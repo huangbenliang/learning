@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package com.atguigu.reflect;
 
 
 import org.junit.jupiter.api.Test;
@@ -67,7 +67,7 @@ public class ReflectionTest {
 
 		//4.了解 使用类加载器 ClassLoader
 		ClassLoader classLoader = ReflectionTest.class.getClassLoader();
-		Class<?> aClass = classLoader.loadClass("com.atguigu.java.Person");
+		Class<?> aClass = classLoader.loadClass("com.atguigu.reflect.Person");
 		System.out.println("aClass = " + aClass);
 		System.out.println(clazz1==aClass);
 	}
