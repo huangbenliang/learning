@@ -34,5 +34,25 @@ public class ReflectionTest {
 		//调用方法
 		Method show = clazz.getDeclaredMethod("show");
 		Object invoke = show.invoke(p);
+
+		//调用私有构造器
+		Constructor con = clazz.getDeclaredConstructor(String.class);
+		con.setAccessible(true);
+		Person jerry = (Person)con.newInstance("jerry");
+		System.out.println("jerry = " + jerry);
+
+		//调用私有属性
+		Field name = clazz.getDeclaredField("name");
+		name.setAccessible(true);
+		name.set(jerry, "碎冰冰");
+		System.out.println("jerry = " + jerry);
+
+		Method showNation = clazz.getDeclaredMethod("showNation", String.class);
+		showNation.setAccessible(true);
+		String nation =(String) showNation.invoke(jerry, "中国");
+		System.out.println("nation = " + nation);
+
+
+
 	}
 }
