@@ -51,8 +51,24 @@ public class ReflectionTest {
 		showNation.setAccessible(true);
 		String nation =(String) showNation.invoke(jerry, "中国");
 		System.out.println("nation = " + nation);
+	}
+	@Test
+	public void test3() throws ClassNotFoundException {
+		//1.调用运行时类的属性: .class
+		Class<Person> clazz1 = Person.class;
+		System.out.println("clazz1 = " + clazz1);
+		//2.通过运行时类的对象,调用.getClass()
+		Class clazz2 = new Person().getClass();
+		System.out.println("clazz2 = " + clazz2);
+		//3.通过Class.forName("全路径限定名") 常用
+		Class<?> clazz3 = Class.forName("java.lang.String");
+		System.out.println("clazz3 = " + clazz3);
+		System.out.println(clazz1==clazz2);
 
-
-
+		//4.了解 使用类加载器 ClassLoader
+		ClassLoader classLoader = ReflectionTest.class.getClassLoader();
+		Class<?> aClass = classLoader.loadClass("com.atguigu.java.Person");
+		System.out.println("aClass = " + aClass);
+		System.out.println(clazz1==aClass);
 	}
 }
