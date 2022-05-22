@@ -1,11 +1,11 @@
 package miji._02erChaShu;
 
-import miji._00commonUtils.TreeEntity;
+import miji._00commonUtils.TreeUtils;
 import miji._00commonUtils.TreeNode;
 
 public class P114 {
 	public static void main(String[] args) {
-		TreeNode root = new TreeEntity().get226();
+		TreeNode root = new TreeUtils().get226();
 		System.out.println(root);
 		new P114().flatten(root);
 		System.out.println(root);

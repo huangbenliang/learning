@@ -28,8 +28,8 @@ public class TreeNode {
 		this.right = right;
 		this.next = next;
 	}
-	@Override
-	public String toString() {
+
+	public String toString1() {
 		if (this == null) {
 			return "[]";
 		}
@@ -56,5 +56,47 @@ public class TreeNode {
 		sb.setCharAt(sb.length() - 1, ']');
 		return sb.toString();
 		//5
+	}
+
+	@Override
+	public String toString() {
+		if (this == null) {
+			return "[]";
+		}
+		StringBuffer sb = new StringBuffer();
+		Queue<TreeNode> q = new LinkedList<>();
+		q.offer(this);
+
+		while (!q.isEmpty()) {
+			for (int i = 0; i < q.size(); i++) {
+				TreeNode cur = q.poll();
+				if (cur == null) {
+					sb.append("* ");
+					continue;
+				} else {
+					sb.append(cur.val + " ");
+				}
+
+				if (cur.left != null) {
+					q.offer(cur.left);
+				} else {
+					q.offer(null);
+				}
+				if (cur.right != null) {
+					q.offer(cur.right);
+				} else {
+					q.offer(null);
+				}
+			}
+		}
+		int k = sb.length();
+		while (k > 0) {
+			if (sb.charAt(k - 2) == '*') {
+				k -= 2;
+			} else {
+				break;
+			}
+		}
+		return sb.substring(0, k);
 	}
 }

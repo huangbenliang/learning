@@ -1,7 +1,7 @@
 package miji._00commonUtils;
 
-public class TreeEntity {
-	TreeNode root;
+public class TreeUtils {
+	static TreeNode  root;
 
 	public TreeNode getRoot() {
 		return root;
@@ -12,7 +12,7 @@ public class TreeEntity {
 	 *
 	 * @return
 	 */
-	public TreeNode get226() {
+	public static TreeNode get226() {
 		root = new TreeNode(4);
 		TreeNode r11 = new TreeNode(2);
 		TreeNode r12 = new TreeNode(7);
@@ -22,10 +22,6 @@ public class TreeEntity {
 		TreeNode r24 = new TreeNode(9);
 		root.left = r11;
 		root.right = r12;
-		//2
-
-		//5
-		//6
 		r11.left = r21;
 		r11.right = r22;
 		r12.left = r23;
