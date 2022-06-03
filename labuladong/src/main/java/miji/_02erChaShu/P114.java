@@ -35,4 +35,21 @@ public class P114 {
 		p.right = right;
 	}
 
+	public void flatten1(TreeNode root) {
+		if (root == null) {
+			return;
+		}
+		flatten(root.left);
+		flatten(root.right);
+		TreeNode right = root;
+		while (right.right != null) {
+			right=right.right;
+		}
+		if (root.left!=null)
+		right.right=root.left;
+		root.left=null;
+		return;
+
+	}
+
 }
