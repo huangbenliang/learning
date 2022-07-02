@@ -1,4 +1,4 @@
-package com.atguigu.java;
+package com.atguigu.reflect;
 
 import lombok.Data;
 

@@ -15,6 +15,7 @@
         <module>000refacting</module>
         <module>001java-base-mashibing</module>
         <module>java_base</module>
+        <module>huaweijishi</module>
     </modules>
     <packaging>pom</packaging>
 

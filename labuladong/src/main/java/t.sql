@@ -1,0 +1,1 @@
+alter sql_table_name add column test_col varchar(255) not null default '';
