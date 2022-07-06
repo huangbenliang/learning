@@ -149,6 +149,8 @@ public class P234回文链表 {
 
 ![image](https://user-images.githubusercontent.com/42233168/177436134-f786f001-bbeb-46b3-afc7-fcedd2ae85f2.png)
 
+![image](https://user-images.githubusercontent.com/42233168/177436592-410c541f-470c-4e88-be4c-5215eb9792d3.png)
+
 
 P104:二叉树遍历最大深度
 
