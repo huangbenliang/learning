@@ -147,9 +147,8 @@ public class P234回文链表 {
 
 ## 执行逻辑
 
-![image-20220531201351955](算法刷题.assets/image-20220531201351955.png)
+![image](https://user-images.githubusercontent.com/42233168/177436134-f786f001-bbeb-46b3-afc7-fcedd2ae85f2.png)
 
-![image-20220531201411025](算法刷题.assets/image-20220531201411025.png)
 
 P104:二叉树遍历最大深度
 
