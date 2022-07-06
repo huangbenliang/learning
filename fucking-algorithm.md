@@ -145,6 +145,43 @@ public class P234回文链表 {
 
 中序位置的代码在一个二叉树节点左子树都遍历完，即将开始遍历右子树的时候执行。
 
+## 迭代代码框架
+```java
+/* 迭代遍历数组 */
+void traverse(int[] arr) {
+    for (int i = 0; i < arr.length; i++) {
+
+    }
+}
+
+/* 递归遍历数组 */
+void traverse(int[] arr, int i) {
+    if (i == arr.length) {
+        return;
+    }
+    // 前序位置
+    traverse(arr, i + 1);
+    // 后序位置
+}
+
+/* 迭代遍历单链表 */
+void traverse(ListNode head) {
+    for (ListNode p = head; p != null; p = p.next) {
+
+    }
+}
+
+/* 递归遍历单链表 */
+void traverse(ListNode head) {
+    if (head == null) {
+        return;
+    }
+    // 前序位置
+    traverse(head.next);
+    // 后序位置
+}
+```
+
 ## 执行逻辑
 
 ![image](https://user-images.githubusercontent.com/42233168/177436134-f786f001-bbeb-46b3-afc7-fcedd2ae85f2.png)
@@ -211,7 +248,7 @@ void levelTraverse(TreeNode root) {
 }
 ```
 
-![image-20220520115252357](算法刷题.assets/image-20220520115252357.png)
+![image](https://user-images.githubusercontent.com/42233168/177436832-c1dbf702-cdab-49fb-aadb-62fe05ad481c.png)
 
 ### 二叉树节点打印框架（层序遍历）
 
